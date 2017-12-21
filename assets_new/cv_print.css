@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.screen_only{
+	display:none;
+}
+
+.print_only{
+	display:inherit;
+}
+
+body, html {
+	background-color: #fff;
+}
+
+/*
+div#cv_main {
+	background-color: #fff;
+	text-align:left;
+	width: 49em;
+	position:relative;
+}
+*/

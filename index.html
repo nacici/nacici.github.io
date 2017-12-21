@@ -1,669 +1,400 @@
-<!DOCTYPE html>
-<html lang = "en">
-   
-   <head>
-      <meta charset = "utf-8">
-      <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+<title>Wenwen Zhang</title>
 
-      <!-- Bootstrap Core CSS -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets_new/css_reset.css">
 
-      <!-- Custom CSS -->
-      <link href="css/full-width-pics.css" rel="stylesheet">
-      
-      <title>UAP 3024 | Fall 2017</title>
-      
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      
-      <!--[if lt IE 9]>
-      <script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-   <style>
-   td{
-      border: 1px dashed   #D3D3D3;
-   }
-   </style>
-   </head>
-   
-   <body background="img/main-banner2.png" style = "background-attachment :fixed; background-repeat: stretch; background-position: 0% 30%;background-size:  80% 60%; padding-top: 0px;" >
-      <!-- Navigation -->
-       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style = "background-color: #660000">
-           <div class="container">
-               <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                       <span class="sr-only">Toggle navigation</span>
-<!--                        <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span> -->
-                   </button>
-                   <a class="navbar-brand" href="#">Syllabus</a>
-               </div>
-               <!-- Collect the nav links, forms, and other content for toggling -->
-               <div class="collapse navbar-collapse navbar-responsive-collapse hidden-sm-up" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                        <li>
-                           <a data-toggle="collapse" data-target=".nav-collapse" href="#objective">Objective</a>
-                        </li>
-                        <li>
-                           <a data-toggle="collapse" data-target=".nav-collapse" href="#book">Text Book</a>
-                        </li>
-                        <li>
-                           <a data-toggle="collapse" data-target=".nav-collapse" href="#schedule">Scheulde</a>
-                        </li>
-                         </li><li>
-                           <a data-toggle="collapse" data-target=".nav-collapse" href="#grading">Grading & Evaluation</a>
-                        </li>
+<link href="assets_new/cv.css" rel="stylesheet" type="text/css" />
 
-                  </ul>
-               </div>
-               <!-- /.navbar-collapse -->
-           </div>
-           <!-- /.container -->
-       </nav>
+<link rel="stylesheet" href="assets_new/cv_print.css" type="text/css" media="print" />
 
+<link rel="shortcut icon" href="logo/WenwenLogo_small.png" />
 
-       <div class = "container" style = "background-color:rgba(255,255,255,0.87)">
-         <div class = "row">
-            <div class = "col-md-12">
-               <h1>
-                  <span style = "font-size:60%">
-                     UAP 3024, Fall 2017
-                  </span>
-                  <hr>
-                  <span style = "color:  #FF6600">Urban</span> <span>and</span> <span style = " color:#660000">Regional</span><span> Analysis</span>
-               </h1>
-               <h2>
-                  <span class = "text-muted" style = "font-size:80%">Virginia Tech, College of Arhictecture and Urban Studies | School of Urban Affairs & Planning</span>      
-               </h2>
-               <span>
-                  10:10 - 11:00 AM, Architecture Annex Room 7, Mon & Wed & Fri
-                  <br>
-                  Instructor: <a href="http://www.prism.gatech.edu/~wzhang300/wenwen/">Wenwen Zhang</a> <br>
-               </span>
+</head>
 
-            </div>
-         </div>
-         <hr>
-         <div class = "row">        
-            <div class = "col-md-8">           
-               <h3 id="overview">Overview</h3>              
-               More than one half of the world population lives now in urban areas, and virtually all countries of the world are becoming increasingly urbanized. Smart urbanization process requires information, such as population growth, changes in demographic compositions, economic activities and demand of infastructures to allcoate human and monetary resources efficiently. Such information are analzed via applying well-designed demographic, economic, land use, and tranpsortation models to various urban datasets. This class offers an introduction to quantitative analysis for planners, with a focus on data and analytics skills typically used in planning analysis. By the end of the semester, students should be familiar with various planning data sources and foundational stastical concepts, and visualization/presentation skills.
-
-            </div>
-            <div class = "col-md-4">
-               <h3>Office Hours</h3>
-               <table id ="office" class = "table table-hover table-condensed" style = "margin:15px 0px;">
-                  <tbody>                    
-                    Wenwen Zhang @ Architecture Annex, Room 215<br>
-                    By Appointment  <br>
-                    <br>
-                    Hector @ Architecture Annex, Room XXX <br>
-                  </tbody>
-               </table>
-            </div>
-
-         </div>
-         <hr id="objective">
-         <div class= "row" style = "padding-top: 20px;">
-            <div class = "col-md-12">
-               <h3 >Class Objective</h3>
-               The goals of this course are:
-               <ol>
-
-                  <li>Knowledge of existing data sources for planning analysis</li>
-                  <li>Basic tools for demographic/cohort analysis</li>
-                  <li>Foundamental economic metrics </li>
-                  <li>Understanding of statistical models and interpreting results and apply models to planning problems</li>
-                  <li>Land use and transportation demand analysis</li>
-                  <li>Ability to present and visualize the results</li>
-                  <li>Familiar with quantiative analysis in Excel</li>
-
-
-               </ol>
-               
-               In general, this course will serve as <b>a basic introduction for those who want to use quantiative model to perform population and economic analysis, as well as forecast demand for residential and commerical land uses and transportaiton infrastructures</b>. Students will be provided with a firm grounding in the principles and concepts of popualtion and economic analysis models, applications of these techniques to Census data to inform real-world planning process. By the end of the course, students are expected to understand the basic components of quantitative analysis in planning and to be familiar with the strength and limitations of different models. 
-            </div>
-         </div>
-         <hr id="Procedure"> 
-          <div class= "row">
-            <div class = "col-md-12">
-               <h3 >Course Procedure and Organization</h3>
-               The course is organized in a series of lectures, hands-on Excel exercises, and readings. The lectures and readings are designed to allow students to have basic knowledge of urban data structures, model principles, and implementations. The exercise session will provide students with hands-on experience using Excel. During the model implementation process, students will learn the skills to conduct data query, basic joining, and perform statistics tests in Excel. Students will use <span class="label label-warning">Google Classroom</span> to submit assignments. The class discussion with other participants and lecturer will be hosted on <span class="label label-warning">Piazza</span>. The class materials and schedules are published on the Google Classroom website.<br> <br>
-
-               The challenge in learning quantitative analysis lies in absorbing a conceptual understanding of different urban modesl and linking this understanding with Excel training in implementation. Therefore, every attempt has been made wherever possible, to provide a “hands-on” exercise application of the concepts demonstrated in the previous lecture sessions. Additionally, practical case-studies in homework assignment will provide examples of the data and models learned in class may be applied in real-world practices, in data preparation, and in problem-solving, to bridge the gap between academics and technicalities. 
-
-
-            </div>
-         </div>
-         <hr id = "book">
-         <div class = "row"style = "padding-top: 20px;">
-            <div class = "col-md-12">
-               <h3>Readings and Materials</h3>
-               The following books are recommended<br>
-               <ul>
-                 <li>Planner’s Estimating Guide: Projecting Land-Use and Facility Needs. (Nelson, Arthur C) </li>
-                 <li>Applied Demography (Siegel, Jacob)</li>
-                 <li>Statistics: A tool for Social Research (Healey, Joseph)</li>
-               </ul>
-               Readings will be posted to Google Classroom. Students are expected to finish readings before coming to classes.
-            </div>
-         </div>
-         <hr id="schedule">
-         <div  class = "row" style = "padding-top: 20px;">           
-            <div class = "col-md-12">
-               <h3 >Class Schedule (Tentative)</h3>
-               <table class = "table table-hover table-condensed" rules = "cols" style = " border-collapse:collapse; box-sizing: border-box">
-                  <thead>
-                     <tr style = "font-weight:bold; border: 3px solid #D3D3D3" >
-                        <td colspan = "2" style = "text-align:center;"><b>Date</b></td>
-                        <td><b>Topic</b></td>
-                        <td><b>Mon</b></td>
-                        <td><b>Wed</b></td>
-                        <td><b>Fri</b></td>
-                        <td style = "width: 170px;">
-                        Reminders <br>
-                        </td>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <!-- week 1-->
-                     <tr>
-                        <td style = "width: 30px;">Aug.</td>
-                        <td style = "width: 80px;">28, 30, 01</td>
-                        <td >
-                           * Welcome and Overview<br>
-                        </td>
-                        <td>
-                           Introduction<br>
-
-                        </td>
-                        <td>
-                           Urban Modeling Overview<br>
-                           <br>
-                        </td>
-                        <td>
-                           Introduction to Census Data<br>
-                           <br>
-                        </td>
-                        <td style = "width: 150px;">&nbsp;</td>
-                     </tr>
-                     <!-- week 2 -->
-                     <tr>
-                        <td style = "width: 30px;">Sept.</td>
-                        <td style = "width: 70px;" >04, 06, 08</td>
-                        <td>
-                           * Make Sense of Census Data<br>
-                        </td>
-                        <td>
-                           <span class="label label-success">Labor Day | No Class</span>
-                        </td>
-                        <td>
-                           Census Data Query<br>
-                           Inclass Exercise<br>                          
-                        </td>
-                        <td>
-                           Descriptive Statistics
-                           Inclass Exercise<br>                          
-                        </td>
-                        <td style = "width: 150px;">  
-                           <font color = "orange"> HW 1 OUT </font><br>
-                        </td>
-                     </tr>
-                     <!-- week 3 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >11, 13, 15</td>
-                        <td>
-                           * Statistics Foundamentals
-                        </td>
-                        <td>
-                           Hypothesis Test Concepts<br>
-                           
-                        </td>
-                        <td>
-                           Hypothesis Testing using Census Data
-                        </td>
-                        <td>
-                           Hypothesis Testing using Census Data
-                        </td>
-                        <td style = "width: 150px; color: orange;">
-                           <font color = "orange"> HW1 DUE SEPT 15TH, 11:59PM</font><br>
-                        </td>
-                     </tr>
-
-                     <!-- week 4 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >18, 20, 22</td>
-                        <td>
-                           * Population Forecast <br>
-                        </td>
-                        <td>
-                           Introduction to Time Series Models
-                        </td>
-                        <td>
-                           Complex Time Series Models
-                        </td>
-                        <td>
-                           Complex Time Series Models
-                        </td>
-                        <td style = "width: 150px; color: orange; ">
-                           HW 2 OUT
-                        </td>
-                     </tr>
-
-                     <!-- week 5 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >25, 27, 29</td>
-                        <td>
-                           * Population Forecasts
-                        </td>
-                        <td>
-                           Ratio Time Series Models
-                        </td>
-                        <td>
-                           Apply Time Series Models in Excel
-                        </td>
-                        <td>
-                           Apply Time Series Models in Excel
-                        </td>
-                        <td style = "width: 150px; color: orange">
-                           <font color = "orange">HW2 DUE SEPT 29TH, 11:59PM</font><br>
-                        </td>
-                     </tr>
-
-
-                     <!-- week 6 -->
-                     <tr>
-                        <td style = "width: 30px;">Oct.</td>
-                        <td style = "width: 70px;" >02, 04, 06</td>
-                        <td>
-                           * Cohort Analysis
-                        </td>
-                        <td>
-                           Cohort Component Overview
-                        </td>
-                        <td>
-                           Fertility
-                        </td>
-                        <td>
-                           Mortality
-                        </td>
-                        <td style = "width: 150px;color: orange">
-                        </td>
-                     </tr>
-
-                     <!-- week 7 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >09, 11, 13</td>
-                        <td>
-                        	* Cohort Analysis
-            
-                        </td>
-                        <td>
-                        	Migration                           
-                        </td>
-                        <td>
-                           Apply cohort component models in Excel
-                        </td>
-                        <td>
-                           <span class="label label-success">Fall Break | No Class</span>
-                        </td>
-                        <td style = "width: 150px;color: orange">
-                           <font color = "orange">FINAL PROJECT OUT</font>
-                        </td>
-                     </tr>
-
-                     <!-- week 8 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >16, 18, 20</td>
-                        <td>
-                           * Economic Analysis
-                        </td>
-                        <td>
-                           <span class="label label-primary">Open Book Midterm</span>
-                        </td>
-                        <td>
-                           Economic Analysis Overview                           
-                        </td>
-                        <td>
-                           Economic Base Theory and Location Quotients
-                        </td>
-                        <td style = "width: 150px; color: orange">
-                           <font color = "orange">HW3 OUT</font><br>
-                           <font color = "orange">MIDTERM</font>
-                        </td>
-                     </tr>
-
-                     <!-- week 9 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >23, 25, 27</td>
-                        <td>
-                            * Economic Analysis
-                        </td>
-                        <td>
-                           Shift-share Models
-                        </td>
-                        <td>
-                           Input-output Models
-                        </td>
-                        <td>
-                           Apply Economic Models in Excel
-                        </td>
-                        <td style = "width: 150px; color: orange">
-                           <font color = "orange">HW3 DUE OCT 27TH, 11:59PM</font><br>
-                        </td>
-                     </tr>
-
-                     <!-- week 10 -->
-                     <tr>
-                        <td style = "width: 30px;">Nov.</td>
-                        <td style = "width: 70px;" >30, 01, 03</td>
-                        <td>
-                           * Land Use Dedemand
-                        </td>
-                        <td>
-                           Residential Land Demand Model Overview
-                        </td>
-                        <td>
-                           Land Use Data
-                        </td>
-                        <td>
-                           Residential Land Demand Cacluation
-                        </td>
-                        <td style = "width: 150px; color : orange">
-                           HW4 OUT<br>
-                        </td>
-                     </tr>
-
-                     <!-- week 11 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >06, 08, 10</td>
-                        <td>
-                           * Land Use Dedemand
-                        </td>
-                        <td>
-                           Commercial Land Demand Model Overview
-                        </td>
-                        <td>
-                           Commercial Land Demand Model Techniques
-                        </td>
-                        <td>
-                           Commercial Land Demand Model Application
-                        </td>
-                         <td style = "width: 150px; color : orange">
-                           HW4 DUE NOV 10TH, 11:59PM
-                        </td>
-                     </tr>
-
-                     <!-- week 12 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px" >13, 15, 17</td>
-                        <td>
-                           * Transportation Demand
-                        </td>
-                        <td>
-                          Transportation Model Overview
-                        </td>
-                        <td>
-                           NHTS Data and Four Step Model
-                        </td>
-                        <td>
-                           Trip Generation using NHTS data
-                        </td>
-                        <td style = "width: 150px; color: orange">
-                        </td>
-                     </tr>
-                     <!-- week 13 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >20, 22, 24</td>
-                        <td>
-                           * NO CLASS
-                        </td>
-                        <td>
-                           <span class="label label-success">Thanks Giving | No Class</span>
-                        </td>
-                        <td>
-                           <span class="label label-success">Thanks Giving | No Class</span>
-                        </td>
-                        </td>
-                        <td>
-                           <span class="label label-success">Thanks Giving | No Class</span>
-                        </td>
-                        </td>
-                        <td style = "width: 150px; color:orange">
-                        </td>
-                     </tr>
-
-                     <!-- week 14 -->
-                     <tr>
-                        <td style = "width: 30px;">Dec.</td>
-                        <td style = "width: 70px;" >27, 29, 01</td>
-                        <td>
-                           * Recent trends in Planning Models
-                        </td>
-                        <td>
-                           Big Data and Planning Models
-                        </td>
-                        <td>
-                           Agent Based Simulations
-                        </td>
-                         <td>
-                           Data Visualization
-                        </td>
-                        <td style = "width: 150px; color: orange">
-
-                        </td>
-                     </tr>
-
-                     <!-- week 15 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >04, 06, 08</td>
-                        <td>
-                           * Group Presentations
-                        </td>
-                        <td>
-                           Group Presentations
-                        </td>
-                        <td>
-                           Group Presentations
-                        </td>
-                        <td>
-                           Group Presentations
-                        </td>
-                        <td style = "width: 150px;">
-                        </td>
-                     </tr>
-
-                     <!-- week 16 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >11, 13</td>
-                        <td>
-                           * Final Project Preparation
-                        </td>
-                        <td>
-                           Work on Projects
-                        </td>
-                        <td>
-                           Work on projects
-                        </td>
-                        <td></td>
-                        <td style = "width: 150px;"></td>
-                     </tr>
-
-                      <!-- week 16 -->
-                     <tr>
-                        <td style = "width: 30px;"></td>
-                        <td style = "width: 70px;" >18</td>
-                        <td>
-                           * Final
-                        </td>
-                        <td>
-                           Projects Due<br>
-                           <span class="label label-primary">Open Book Final Exam</span>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td style = "color:orange">
-                           PROJECT DUE<br>
-                           FINAL EXAM
-
-                        </td>
-                     
-                     </tr>
-
-
-                  </tbody>
-               </table>
-            </div>
-         </div>
-         <hr id="grading">
-         <div class = "row" style = "padding-top: 20px;">
-            <div class = "col-md-12">
-               <h3 >Course Requirements and Grading</h3>
-               <div class= "col-md-7">
-                  <h4>Homework Assignments [50%]</h4>
-                  <div class="alert alert-info">
-                     <span class="label label-danger">The BEST way</span> to get help with homework assignments is to post your questions to Piazza. (Please kindly review the posted questions for potential answers) If you prefer that keep your questions to only the TA and the instructor, you may use the <em>private post</em> feature (i.e., check the "Individual Students(s) / Instructors(s)" radio box).
-                  </div>
-                  <div class="alert alert-info">
-                     <span class="label label-danger">NO</span> collaboration is allowed for homework assignments, each student <span class="label label-danger">must</span> write up their own answers. 
-                     All VT students must observe the <a href="https://honorsystem.vt.edu/">Undergraduate honor code manual</a>.
-                  </div>
-
-                  We plan to have four assignments (Check Schedule for Due time):<br>
-                  <ul>
-                     <li>HW1 [10%]: Statistic Analysis Using Census Data</li>
-                     <li>HW2 [15%]: Population Forecast</li>
-                     <li>HW3 [15%]: Economic Analysis</li>
-                     <li>HW4 [10%]: Land Use Demand Estimation</li>
-                  </ul>
-
-                  The detailed grading criteria will be provided in assignment descriptions. Students will have approxiatmely 1.5 - 2 weeks to finish the assignment. The in-class exercise sessions will cover similar questions!
-               </div>
-               
-               <div class= "col-md-5">
-                  <h4>Class Project [25%]</h4>
-                  There will be one team project for group of 3-4. Students are expected to utilize models learned in class to perform demographic and economic analysis to estiamte land use and transportation demands for an assigned study area. Scores will be distributed based on peer evaluation.
-               </div>
-
-               <div class= "col-md-5">
-                  <h4>Exam [15%]</h4>
-                  There will be one open-book midterm exam after Fall break, covering materials taught before the exam. Types of questions on the exam including: short asnwer question for critical concepts, multiple-choices, excel functions, and calcualtions. 
-               </div>
-
-               <div class= "col-md-5">
-                  <h4>Participation [10%]</h4>
-                   <div class="alert alert-info">
-                     <span class="label label-danger">Hint</span> Piazza does track students' contributions
-                  </div>
-                  Attendance, participation in class discussions, and out of class discussions (on Piazza), and motivation may affect your grade and could potentially influence any borderline grade. Roll will be called in class (sometimes ungraded short quizes). 
-               </div>
-               <div class = "col-md-12">
-                  <h4>Final Evaluation</h4>
-                  The breakdown of final grades: <br>
-                  <div class = "col-md-3">
-                     <ul>
-                        <li> <span class="label label-default">A  </span> : [94,100]
-                        <li> <span class="label label-default">A- </span> : [90, 94)
-                     </ul>
-                  </div>
-                  <div class = "col-md-3">
-                     <ul>
-                        <li> <span class="label label-default">B+ </span> : [87, 90)
-                        <li> <span class="label label-default">B  </span> : [83, 87)
-                        <li> <span class="label label-default">B- </span> : [80, 83)
-                     </ul>
-                  </div>
-                  <div class = "col-md-3">
-                     <ul>
-                        <li> <span class="label label-default">C+ </span> : [77, 80)
-                        <li> <span class="label label-default">C  </span> : [73, 77)
-                        <li> <span class="label label-default">C- </span> : [70, 73)
-                     </ul>
-                  </div>
-                  <div class = "col-md-3">
-                     <ul>
-                        <li> <span class="label label-default">D  </span> : [60, 70)
-                        <li> <span class="label label-default">F  </span> : [0 , 60)
-
-                     </ul>
-                  </div>
-               </div>
-               
-            </div>
-
-           
-         </div>
-         <hr>
-         <div class="well">
+<body background="assets_new/back2.jpg">
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-574db11ad33f317c"></script>
+<!-- AddThis Smart Layers END -->
   
-            <h3>Late Submissions Policy</h3>
-            <ul>
-            <!-- <li>Strictly enforced.</li> -->
-            <li><strong>Homework</strong>: each student has <em>5 slip days</em> total. No questions asked.</li>
-            <li><strong>Each slip day equals 24 hours</strong>. E.g., 2 slips days will be used if you submit your assignment 40 hours after the deadline</li>
-            <li>After all slip days are used up, <strong>10% deduction for every 24 hours of delay</strong>. (e.g., 10 points for a 100-point homework)</li>
-            <li>To use slip days, <strong>identify the number of days you have used by the end of the homework assignment</strong></li>
-            <li><strong>Project</strong>: Slip days cannot be used for team projects. 5% reduction for every 24 hours of delay. <strong>NO</strong> project will be graded if submitted 3 days after the deadline</li>
-            <br>
-            <li>We <strong>will not consider late submission of any missing parts</strong> of an homework assignment or project deliverable.
-            To make sure you have submitted everything, download your submitted files to double check.
-            </li>
-            <br>
-            <li>No penalties for medical reasons or emergencies. You <strong>must</strong> submit a doctor's note or an official letter explaining the emergency.</li>
-            </ul>
+  
+<div id="cv_main"> 
+    <ul id="nav" class="screen_only" style="height:40px">
+      <li> <a href="https://www.uap.vt.edu/about/"><img class="screen_only" style="float:right; position: relative;" src="assets_new/spia-logo.png" width="210" height="21" alt="Virginia Tech, Urban Affairs and Planning" />
+      </a></li>
+      <li><a href="wenwen_cv.pdf">CV <span style="font-size:10px; font-weight:normal;">(PDF)</span></a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li>Projects [under construction]</li>
+    </ul>
 
-         </div>
+    <!--TITLE -->
+    <div id="name_box" style="height: 300px; width: 900px; position: relative;"> <img src="assets_new/wenwen3.png" height="210" style="position: absolute; right: 50px; top: 45px;"/> <span style="font-size: 42px; text-transform: uppercase; display: block; position: absolute; left: 165px; top: 80px;"> Wenwen ZHANG</span>
 
-         <div class = "well">
-            <h3>Class Accessibility</h3>
-            Any student with a disability requiring accommodations in this course is encouraged to contact me after class or during office hours. In addition, students should contact the <a href = "https://www.ssd.vt.edu/">Services for Students with Disabilities</a> for Academic Success. 
-         </div>
+    <!-- GT -->
+    <div style="font-size: 16px; position: absolute; left: 166px; top: 138px; width: 521px;">
+    <a href="http://www.vt.edu/">Virginia Tech</a><br />
+    <span style="color:#000;">Assistant Professor</span>, <a href="https://www.uap.vt.edu/about/" style="color:#888">School of Urban Affairs and & Planning</a>
+    <br/>
+    </div>
+
+    <!-- GT --> 
+    <div style="font-size: 14px; position: absolute; left: 166px; top: 200px; color: #666;">     
+          <img src="assets_new/mail.png", height = "15"/> wenwen.zhang<img class="at" src="assets_new/a.gif" width="14" height="14" />vt.edu
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          <br/>
+           <img src="assets_new/location.png", height = "14"/> <a href="https://goo.gl/maps/joccqLNyztT2">Architecture Annex Building,</a> Room 215
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br/>
+           <img src="assets_new/phone.png", height = "13"/> 540-231-5485<br/>
+          <!-- google scholar -->
+           <img src="assets_new/scholar.png", height = "14"/> <a href="http://scholar.google.com/citations?hl=en&amp;user=FBjPT3wAAAAJ">Google x
+          Scholar</a> (h-index:3) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          <br/>
+     <div style="height:2px;"></div>
+  </div>
+</div>       
+        
+    
+<h1>Education</h1>
+<div class="left">May 2017</div> 
+<div class="right"><strong>Ph.D. in City and Regional Planning</strong>  Georgia Institute of Technology </div>
+<div class="right"><strong>MS in Computational Science & Engineering</strong>  Georgia Institute of Technology </div>
+<div class ="right"> Dissertation: The Interaction between Land Use and Transportation in the Era of Shared Autonomous Vehicle: A Discrete Simulation Model</div>
+<div class ="right"> Committee: <a href="http://www.cgis.gatech.edu/people/subhro-guhathakurta">Subhrajit Guhathakurta</a>, <a href="http://www.design.gatech.edu/people/steven-p-french">Steven French</a>, <a href="http://rampendyala.weebly.com/">Ram Pendyala</a>, <a href="http://www.cc.gatech.edu/~fujimoto/">Richard Fujimoto</a>, <a href="http://www.cc.gatech.edu/~bdilkina/">Bistra Dilkina</a> 
+</div>
+
+<div class="left">May 2013</div> 
+<div class="right"><strong>MS in City and Regional Planning</strong>  Georgia Institute of Technology</div>
+<div class="right"><strong>MS in Civil Engineering</strong>  Georgia Institute of Technology </div>
+<div class="right"> Thesis: <a href="http://www.nctspm.gatech.edu/sites/default/files/u60/wenwen_zhang_201305_mast.pdf"> The Effects of Compact Development on travel Behavior, Energy Consumption and GHG Emissions: Lessons from neighborhoods in Phoenix Metropolitan Area </a></div>
+<div class="right"> Committee: Subhrajit Guhathakurta, Steven French, Yanzhi Xu </div>
 
 
-         <div class = "row">
-            <div class = "col-md-12">
-               <h3 id="housekeeping">Finally, a couple of house keeping things</h3>
-               <ol>
-                  <li>Check the class website frequently to see any changes, updates, tips, and announcements. </li>
-                  <li>When you submit your final work, please include all your works into one PDF file, following file naming convention like this: ‘ch1_Lastname.pdf’, ‘major1_Lastname.pdf”, ‘Exam_Lastname.pdf’. Word and Excel NOT allowed for submission</li>
-                  <li>When you have questions, please e-mail me with a heading of “[UAP3024]” in the subject. </li>
-               </ol>
-            </div>
-         </div>
-         <hr>
-         <h2>Welcome to the world of Urban and Regional Analysis and good luck!</h2>
-         <br>
-         <br>
-       </div>
+<div class="left">June 2011</div> 
+<div class="right"><strong>BE in City and Regional Planning</strong>  Zhejiang University </div>
+<div class="right">Option Paper: Develop Urban Growth Boundary using Ceullular Automata Model Based on Green Infrastructure Anlysis: A Case Study of Chun'An County, China</div>
+<div class="right">Adivsor: Yonghua Li </div>
 
-      
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
-      
-   </body>
+
+<h1>Research Interest</h1>
+<div class="right">Urban Land Use and Transportation Interaction</div>
+<div class="right">Innovative/Disruptive Transportation Technology</div>
+<div class="right">Urban Modeling/Simulation</div>
+<div class="right">Sustainable Development</div>
+<div class="right">Data Analytics & Visualization in Planning</div>
+
+<h1>Awards & Honors</h1>
+<div class="left">2016</div> 
+<div class="right">KDD2016 Best Student Paper Runner Up (Applied Data Science Track)</div> 
+
+
+<div class="left">2013</div> 
+<div class="right">Georgia Planning Association (GPA) Annual Outstanding Student</div> 
+<div class="right">Best Research Poster in GIS Day Mapping Competition</div> 
+
+<div class="left">2011</div> 
+<div class="right">Zhejiang University Excellent Graduation</div>
+<div class="right">Second Prize in Chinese Undergraduate Mathematical Modeling Competition</div>
+<div class="right">Zhejiang University First Grade Scholarship</div>
+
+<div class="left">2010</div> 
+<div class="right">Kunhe Architecture and Planning Fellowship</div>
+
+<div class="left">2009</div> 
+<div class="right">Zhejiang University Outstanding Student Scholarship</div>
+
+<div class="left">2008</div> 
+<div class="right">China Nandu Innovation Scholarship</div>
+
+<div class="left">2007</div> 
+<div class="right">Zhejiang University First Grade Scholarship</div>
+<div class="right">China's National Scholarship (Granted by China's Department of Education)</div>
+
+
+<a name="publications"></a>
+<h1>Publications</h1>
+<div class="publications"><!-- begin publications -->
+<!-- ========== journal ========== -->
+<a name="pubs_journal"></a>
+<div class="left">Journal</div>
+<div class="rightmost"><a href="papers/17-TRB-SAV-PARKING.pdf">PDF</a></div>
+<div class="right">
+<strong>Parking Spaces in the Age of Shared Autonomous Vehicles: How Much Parking Will We Need and Where?</strong>
+<strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta, <i>Transportation Research Record, Journal of the Transportation Research Board (forthcoming).</i>
+</div>
+
+<div class="rightmost"><a href="papers/17-TRB-TRAVEL-ENERGY.pdf">PDF</a></div>
+<div class="right">
+<strong>Estimating Household Travel Energy Consumption in Conjunction with a Travel Demand Forecasting Model.</strong>
+Garikapati, V.M., D. You, <strong>W. Zhang</strong>, R.M. Pendyala, S. Guhathakurta, M. Brown, and B. Dilkina, <i>Transportation Research Record, Journal of the Transportation Research Board (forthcoming).</i>
+</div>
+
+<div class="rightmost"><a href="papers/17-EPB-OPEN-DATA.pdf">PDF</a></div>
+<div class="right">
+<strong>Development of a Community Planning Support System based on Open Data: Flow-based Planning Tool in the City of Atlanta.</strong>
+Ge Zhang, <strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta, Nisha Botchwey,<i> Environment and Planning B: Urban Analytics and City Science (forthcoming).</i>
+</div>
+
+<div class="rightmost"><a href="http://www.sciencedirect.com/science/article/pii/S1876610216300923">PDF</a></div>
+<div class="right">
+<strong>Trends in Automobile Energy Use and GHG Emissions in Suburan and Inner City Neighborhoods: Lessons from Metropolitan Phoenix, USA</strong>.
+<strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta, Catherine Ross<i>, Energy Procedia, 88, 82-85,</i> 2016.
+</div>
+
+<div class="rightmost"><a href="http://www.sciencedirect.com/science/article/pii/S221067071530010X">PDF</a></div>
+<div class="right">
+<strong>Exploring the Impact of Shared Autonomous Vehicles on Urban Parking Demand: An Agent-Based Simulation Approach</strong>.
+<strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta, Jinqi Fang, Ge Zhang<i>, Sustainable Cities and Society, 19, 34-35,</i> 2015.
+</div>
+
+  
+<!-- ========== Book ========== -->
+<div class="left">Book Chapter</div>
+<div class="rightmost"><a href="papers/15-cupum-bigdata.pdf">PDF</a></div>
+<div class="right">
+<strong>How Should Planners be Trained to Handle Big Data</strong>.
+Steven P. French, Camille Barchers, <strong>Wenwen Zhang</strong><i>, Seeing Cities Through Big Data - Research, Methods and Applicaitons in Urban Informatics</i>, 2015.
+</div>
+
+<!-- ========== Conference ========== -->
+<div class="left">Conference</div>
+<div class="rightmost"><a href="papers/2016-ACSP-RESIDENTIAL-LOCATION-CHOICE.pptx">PPT</a></div>
+<div class="right">
+<strong>Residential Location Choice for Workers in the Era of Shared Autonomous Vehicles</strong>
+<strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta<i>, ACSP Conference</i>, Nov. 3-6, Portland, OR, 2016.
+</div>
+
+<div class="rightmost"><a href="papers/2016-ACSP-ZILLOW.pptx">PPT</a></div>
+<div class="right">
+<strong>Housing Value Resilience in TOD vs. TAD: Evidence from the City of Atlanta</strong>
+<strong>Wenwen Zhang</strong>, Fangru Wang, Camille Barchers, and Yongsung Lee<i>, ACSP Conference</i>, Nov. 3-6, Portland, OR, 2016.
+</div>
+
+
+<div class="rightmost"><a href="papers/2016-UPE-SAV-PARKING.pdf">PDF</a></div>
+<div class="right">
+<strong>Parking Spaces in the Age of Shared Autonomous Vehicles: How Much Parking Will We Need and Where?</strong>
+<strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta, Catherine Ross <i>, UPE Conference</i>, May. 31- Jun. 3, Lisbon, Portugal, 2016.
+</div>
+
+<div class="left">
+<img src="papers/firebird-framework.png" height="70" style="position:  right: 10px; top: 25px;"/>
+</div>
+<div class="rightmost"><a href="http://arxiv.org/pdf/1602.09067.pdf">PDF</a></div>
+<div class="right">
+<strong>Firebird: Predicting Fire Risk and Prioritizing Fire Inspections in Atlanta</strong>.
+Michael Madaio, Shang-Tse Chen, Oliver L. Haimson, <strong>Wenwen Zhang</strong>, Xiang Cheng, Matthew Hinds-Aldrich, Duen Horng Chau, Bistra Dilkina<i>, ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</i>, Aug. 13- 17, San Francisco, CA, 2016.
+</div>
+
+<div class="rightmost"><a href="http://web.mit.edu/cron/project/CUPUM2015/proceedings/Content/infrastructure/171_zhang_h.pdf">PDF</a></div>
+<div class="right">
+<strong>Development and Application of Guideline for Open Source Data Based Community Planning Support System Development: Neighborhood Quality of Life and Health in City of Atlanta</strong>.
+Ge Zhang, <strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta <i>, CUPUM Conference</i>, Jul. 7-10, Boston, MA, 2015.
+</div>
+
+<div class="left"><img src="papers/16-cupum-bigdata.png" height="50" style="position:  right: 10px; top: 25px;"/></div>
+<div class="rightmost"><a href="http://web.mit.edu/cron/project/CUPUM2015/proceedings/Content/pss/194_french_h.pdf">PDF</a></div>
+<div class="right">
+<strong>Moving Beyond Operations: Leveraging Big Data for Urban Planning Decisions</strong>.
+Steven P. French, Camille Barchers, <strong>Wenwen Zhang</strong><i>, CUPUM Conference</i>, Jul. 7-10, Boston, MA, 2015.
+</div>
+
+<div class="rightmost"><a href="http://web.mit.edu/cron/project/CUPUM2015/proceedings/Content/modeling/170_zhang_h.pdf">PDF</a></div>
+<div class="right">
+<strong>Hierarchical Controls on Watershed Stormwater: Land Use/Cover Composition and Connectivity </strong>.
+Ge Zhang, Subhrajit Guhathakurta, <strong>Wenwen Zhang</strong><i>, CUPUM Conference</i>, Jul. 7-10, Boston, MA, 2015.
+</div>
+
+<div class="rightmost"><a href="papers/15-TRB-SAV.pdf">PDF</a></div>
+<div class="right">
+<strong>The Performance and Benefits of a Shared Autonomous Vechicles Based Dynamic Ridesharing System: An Agent-Based Simulation Approach</strong>.
+<strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta, Jinqi Fang, Ge Zhang<i>, TRB Conference</i>, Jan. 11-17, Washington D.C., 2015.
+</div>
+
+<div class="rightmost"><a href="papers/14-TRB-SPIDER.pdf">PDF</a></div>
+<div class="right">
+<strong>Spider Maps: Summary of Best Practices and Guide to Design</strong>.
+<strong>Wenwen Zhang</strong>, Margaret Carragher, Ann Jacobs<i>, TRB Conference</i>, Jan. 11-17, Washington D.C., 2014.
+</div>
+
+<div class="rightmost"><a href="http://www-hagen.cs.uni-kl.de/wp-content/uploads/publication/1034.pdf">PDF</a></div>
+<div class="right">
+<strong>Urban Transport Energy Consumption Explored Through 3D ARC Maps</strong>.
+Stephanie Schweitzer, Ariane Middel, <strong>Wenwen Zhang</strong><i>, IEEE VisWeek</i>, Oct. 13-18, Atlanta, GA, 2013.
+</div>
+
+<div class="rightmost"><a href="papers/13-AESOP-NEES.pdf">PDF</a></div>
+<div class="right">
+<strong>Modeling Nonstructural Damage for Metropolitan Building Stocks</strong>.
+Steven P. French, <strong>Wenwen Zhang</strong><i>, Joint AESOP/ACSP Congress</i>, Jul. 15-19 Dublin, Ireland, 2013.
+</div>
+
+<div class="rightmost"><a href="papers/13-AESOP-ENERGY.pdf">PDF</a></div>
+<div class="right">
+<strong>The Effects of Compact Development on Travel Behavior, Energy Consumption and GHG Emissions: Lessons from Neighborhoods in Phoenix Metropolitan Area
+</strong>.
+<strong>Wenwen Zhang</strong>, Subhrajit Guhathakurta<i>, Joint AESOP/ACSP Congress</i>, Jul. 15-19 Dublin, Ireland, 2013.
+</div>
+
+<div class="rightmost"><a href="http://amonline.trb.org/trb-59976-2014-1.2467145/t-1134-1.2477135/328-1.2475273/14-1450-1.2479241/14-1450-1.2479243?qr=1">PDF</a></div>
+<div class="right">
+<strong>From Component to Metro Region: Modeling the Benefits of Non-structural Seismic Improvement</strong>.
+Steven P. French, <strong>Wenwen Zhang</strong><i>, NEES</i>, Oct. 26-27, Reno, Nevada.
+</div>
+
+
+<!-- ========== Teaching ========== -->
+<h1>Teaching</h1>
+<div class="left">Lecturer of Record</div>
+<div class="right"> Virginia Tech <br>
+<strong>Urban Regional Analysis</strong>. UAP | <a href= "https://nacici.github.io/UAP3024">Fall 2017.</a></div>
+<div class="right"> Georgia Institute of Technology <br>
+<strong>Introduction to GIS</strong>. CP6514 | Spring 2017. <br>
+<strong>Introduction to GIS</strong>. CP6514 | <a href="http://www.prism.gatech.edu/~wzhang300/intro2gis/">Fall 2016.</a> </div>
+
+<div class="left">Guest lectures</div>
+<div class="right"><strong>Practitioner’s guide for Data Visualization and Analytic Project </strong> for <em><a href="http://poloclub.gatech.edu/cse6242/2015fall/">CSE6242 Data and Visual Analytics</a></em>. Instructor: Prof. Polo Chau. Fall 2015. Georgia Tech.</div>
+<div class="right"><strong> Geocoding Using Python and Google API</strong> and <strong> Built Environment Measurement Quantifcation in GIS</strong> for <em>CP6051 Transportation and GIS</em>. Instructor: Thomas Hamed. Spring 2016. Georgia Tech.</div>
+
+
+
+
+<!-- ========== Invited Talks ========== -->
+<h1>Invited Talks</h1>
+<div class="left">Jul. 23, 2015</div>
+<div class="right"><strong>Predicting Fire Risk in Atlanta using Data Science</strong></div>
+<div class="right">Atlanta Fire and Rescue Department, Georgia. Host: Dr. Matt Hinds-Aldrich, Chief Baker, and Chief Operating Officer Mike Geisler.</div>
+
+<div class="left">Jun. 15, 2013</div>
+<div class="right"><strong>Implementation of GIS Technology in Urban Transportation Planning</strong></div>
+<div class="right">School of Urban Planning and Design (SUPD). Peking University Graduate School, Shenzhen, China. Host: Prof. Jiawen Yang.</div>
+
+<div class="left">May 20, 2013</div>
+<div class="right"><strong>Using GIS Model Builder and Google API to Empower Transit Paper Maps Generation Process</strong></div>
+<div class="right">Metropolitan Atlanta Rapid Transit Authority (MARTA), Atlanta, Georgia. Host: Ryan VanSickle.</div>
+
+<!-- ========== Press ========== -->
+<h1>Press</h1>
+<div class="right"><a href="http://www.cc.gatech.edu/when-computing-equals-social-good">"Embracing Analytics: How communities around the country are utilizing data analytics to predict a host of risk factors and reduce fires"</a>, Jesse Roman, <strong>National Fire Protection Association (NFPA)</strong>, May 2, 2016.</div>
+
+<div class="right"><a href="http://www.nfpa.org/newsandpublications/nfpa-journal/2016/may-june-2016/features/embracing-analytics">"When Computing Equals Social Good"</a>, <strong>Georgia Tech College of Computing</strong>, 2015.</div>
+
+
+<!-- ========== Service ========== -->
+<h1> Services At Georgia Tech <span class="note"></span></h1>
+<div class="left"><a href="http://ite.ce.gatech.edu/">ITE</a></div>
+<div class="right">Webmaster. 2014-2015.</div>
+
+
+<!-- ========== Skills ========== -->
+<h1>Skills</h1>
+<ol class="cv">
+<li><span class="left">Urban Moelling</span>
+<ul class="flat">
+<li>ArcGIS | QGIS</li>
+<li>TransCAD | CUBE</li>
+<li>UrbanSim</li>
+</ul>
+</li>
+<li><span class="left">Programming</span>
+<ul class="flat">
+<li>Python</li>
+<li>SQL</li>
+<li>JavaScript</li>
+<li>CSS</li>
+<li>HTML</li>
+</ul></li>
+<li><span class="left">Design</span>
+<ul class="flat">
+<li>Photoshop</li>
+<li>Illustrator</li>
+<li>InDesign</li>
+<li>3D Studio MAX</li>
+<li>Rhino</li>
+<li>V-RAY</li>
+<li>Grasshopper</li>
+</ul></li>
+<li><span class="left">Hobbies</span>
+<ul class="flat">
+<li>Pianist (20+ years)</li>
+<li>Paintist (20+ years)</li>
+</ul></li>
+<li><span class="left">Languages</span>
+<ul class="flat">
+<li>English</li>
+<li>Mandarin (Native)</li>
+</ul></li>
+</ol>
+
+
+<!-- ========== References ========== -->
+<!--
+<h1>References</h1>
+<div class="right"><strong>Subhrajit Guhathakurta</strong><br />
+Professor,
+School of City and Regional Planning, Director of Center for Geographic Information System, Georgia Institute of Tehcnology</div>
+<div class="right"><strong>Steven French</strong><br />
+Professor, 
+Dean of College of Design, Georgia Institute of Technology</div>
+<div class="right"><strong>Ram Pendyala</strong><br />
+Professor, 
+Civil Engineering, Arizona State University</div>
+<div class="right"><strong>Richard Fujimoto</strong><br />
+Professor, School of Computational Science & Engineering, Georgia Institute of Technology</div>
+<div class="right"><strong>Bistra Dilkina</strong><br />
+Assistant Professor,   
+School of Computational Science & Engineering, Georgia Institute of Technology</div>
+</div>
+</br>
+</br>
+-->
+<!-- <script type="text/javascript">
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-1870460-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> -->
+ 
+<!--
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script> 
+<script type="text/javascript">
+_uacct = "UA-1870460-2";
+urchinTracker();
+</script>
+-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-80472059-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<!-- ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+ $('#news').load('news.html');
+});
+</script>
+
+
+</body>
 </html>
