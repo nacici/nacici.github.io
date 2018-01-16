@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello Python</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datacamp.com/datacamp-light-latest.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="./UAP5114">UAP 5114 Spring 2018</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Print</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Variable Types</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Variable Naming Rules</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Variable Calculation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>01 Hello Python</h1>
+              <span class="subheading">Python Basics Part I</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-md-12 mx-auto">      
+          <div class="post-preview">
+              <h2 class="post-title">
+                Ask Python to print out a Variable
+              </h2>
+
+              You may easily ask Python to print out a Variable on screen by using the <span class="label label-danger">print</span> function. Have a try in the interactive boxes below: <br>
+              <br>
+
+              <div data-datacamp-exercise data-lang="python">
+                <code data-type="pre-exercise-code">
+                </code>
+                <code data-type="sample-code">
+                  # Create a variable a, equal to "Hello Python"
+
+
+                  # Print out a
+
+
+                </code>
+                <code data-type="solution">
+                  # Create a variable a, equal to 5
+                  a = "Hello Python!"
+
+                  # Print out a
+                  print(a)
+                </code>
+                <code data-type="sct">
+                  test_object("a")
+                  test_function("print")
+                  success_msg("Great job!")
+                </code>
+                <div data-type="hint">Use the assignment operator (<code>=</code>) to create the variable <code>a</code>.</div>
+              </div>
+
+              <hr>
+              <h2 class="post-title">
+                Python Variables
+              </h2>
+
+              <h3>
+                Python Variable Types
+              </h3>
+              This tutorial will go over a few basic types of variables.<br>
+              <br>
+              <b>Numbers</b><br>
+              Python supports two types of numbers - integers and floating point numbers. (It also supports complex numbers, which will not be explained in this tutorial).<br>
+              <br>
+              To define an integer, use the following syntax:<br>
+
+              <br>
+
+              <div data-datacamp-exercise data-lang="python">
+                <code data-type="pre-exercise-code">
+                </code>
+                <code data-type="sample-code">
+                  # Create a variable a, equal to 5
+
+
+                  # Print out the type of variable a
+
+
+                </code>
+                <code data-type="solution">
+                  # Create a variable a, equal to 5
+                  a = 5
+
+                  # Print out a
+                  print(type(a))
+                </code>
+                <code data-type="sct">
+                  test_object("a")
+                  test_function("type")
+                   Ex().check_object('a').is_instance(int)
+                  success_msg("Great job!")
+                </code>
+                <div data-type="hint">Use the function (<code>type()</code>) to get the type of variable <code>a</code>.</div>
+              </div>
+              <br>
+              To define a float, use the following syntax:<br>
+
+              <br>
+
+              <div data-datacamp-exercise data-lang="python">
+                <code data-type="pre-exercise-code">
+                </code>
+                <code data-type="sample-code">
+                  # Create a variable a, equal to 5.0
+
+
+                  # Print out type of a
+
+
+                </code>
+                <code data-type="solution">
+                  # Create a variable a, equal to 5.0
+                  a = 5.0
+
+                  # Print out a
+                  print(type(a))
+                </code>
+                <code data-type="sct">
+                  test_object("a")
+                   Ex().check_object('a').is_instance(float)
+                  test_function("type")
+                  success_msg("Great job!")
+                </code>
+                <div data-type="hint">Use the function(<code>type()</code>) to get the type of the variable <code>a</code>.</div>
+              </div>
+              <br>
+              In addition to integers and floats, Python have many other embedded variable types, including <b>String</b> (We have used that one in our first example), <b>Boolean</b> (True or False) <br>
+              <br>
+              <div data-datacamp-exercise data-lang="python">
+                <code data-type="pre-exercise-code">
+                </code>
+                <code data-type="sample-code">
+                  # Create a boolean variable a and set it to be True (note NO quotation marks!)
+
+
+                  # Print out type of a
+
+
+                </code>
+                <code data-type="solution">
+                  # Create a variable a, equal to 5.0
+                  a = True
+
+                  # Print out a
+                  print(type(a))
+                </code>
+                <code data-type="sct">
+                  test_function("type")
+                  Ex().check_object('a').is_instance(bool)
+                  Ex().check_object('a').has_equal_value()
+                  success_msg("Great job!")
+                </code>
+                <div data-type="hint">Use the function(<code>type()</code>) to get the type of the variable <code>a</code>.</div>
+              </div>
+              <br>
+              <h3>
+                Python Variables Naming Rules
+              </h3>
+              <ul>
+                <li> Variables names must start with a letter or an underscore, such as:
+                  <ul>
+                    <li>_underscore
+                    <li>underscore_
+                  </ul>
+
+                <li> The remainder of your variable name may consist of letters, numbers and underscores.
+                  <ul>
+                    <li>password1
+                    <li>n00b
+                    <li>un_der_scores
+                  </ul>
+                <li> Names are case sensitive. The following are different!
+                  <ul>
+                    <li>case_sensitive 
+                    <li>CASE_SENSITIVE
+                    <li>Case_Sensitive 
+                  </ul>
+              </ul>
+
+
+
+          </div>
+
+          <!-- Pager -->
+          <!-- <div class="clearfix">
+            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+           <!--  <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li> -->
+<!--               <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li> -->
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Virginia Tech 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+
+  </body>
+
+</html>
