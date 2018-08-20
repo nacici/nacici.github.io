@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang = "en">
+   
+   <head>
+      <meta charset = "utf-8">
+      <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="wenwen zhang" content="">
+
+
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+      <link href="css/full-width-pics.css" rel="stylesheet">
+      
+      <title>UAP 5114 | Spring 2018</title>
+      
+   <style>
+      td{
+         border: 1px dashed   #D3D3D3;
+      }
+      </style>
+   </head>
+   
+   <body background="img/main-banner2.png" style = "background-attachment :fixed; background-repeat: stretch; background-position: 0% 30%;background-size:  80% 60%; padding-top: 0px;" >
+      <!-- Navigation -->
+       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style = "background-color: #660000">
+           <div class="container">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                       <span class="sr-only">Toggle navigation</span>
+<!--                        <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span> -->
+                   </button>
+                   <a class="navbar-brand" href="#">Syllabus</a>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse navbar-responsive-collapse hidden-sm-up" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                        <li>
+                           <a data-toggle="collapse" data-target=".nav-collapse" href="#objective">Objective</a>
+                        </li>
+                        <li>
+                           <a data-toggle="collapse" data-target=".nav-collapse" href="#book">Text Book</a>
+                        </li>
+                        <li>
+                           <a data-toggle="collapse" data-target=".nav-collapse" href="#schedule">Scheulde</a>
+                        </li>
+                         </li><li>
+                           <a data-toggle="collapse" data-target=".nav-collapse" href="#grading">Grading & Evaluation</a>
+                        </li>
+
+                  </ul>
+               </div>
+               <!-- /.navbar-collapse -->
+           </div>
+           <!-- /.container -->
+       </nav>
+
+
+       <div class = "container" style = "background-color:rgba(255,255,255,0.87)">
+         <div class = "row">
+            <div class = "col-md-12">
+               <h1>
+                  <span style = "font-size:60%">
+                     UAP 5125, Fall 2018
+                  </span>
+                  <hr>
+                  <span style = "color: #660000 ">Planning Studio</span> <span> | <br>
+                  </span> <span style = " color:#FF6600">Real-World Problems and Solutions</span>
+               </h1>
+               <h2>
+                  <span class = "text-muted" style = "font-size:80%">Virginia Tech, College of Arhictecture and Urban Studies | School of Urban Affairs & Planning</span>      
+               </h2>
+               <span>
+                  4:00 - 6:30 PM, Architecture Annex Room 111, Tuesday
+                  <br>
+                  Instructor: <a href="/">Wenwen Zhang</a> <br>
+               </span>
+
+            </div>
+         </div>
+         <hr>
+         <div class = "row">        
+            <div class = "col-md-8">           
+               <h3 id="overview">Overview</h3>              
+               We are in the era of big data, with 2.5 exabytes - that's 2.5 billion gigabytes (GB) - of data generated every day. Planners are expected to be equipped with quantitative analysis skill sets and data visualization techniques to take advantage of urban big data to address/monitor/measure complex urban problems. This class offers an introduction to urban analytics to planners, with a focus on unstructured urban data acquisition and processing. Additionally, the class also provides fundamentals regarding machine learning and text mining algorithms that can be used to develop supervised and unsupervised predictive models to address real-world inquiries. The course also emphasizes on data visualization and communication skillsets to enhance planners public engagement skills in the age of big data. By the end of the semester, students should be familiar with adapting python scripts to obtain and process unstructured urban data, train and test machine learning models, and effectively visualize model outputs and communicate to local stakeholders.
+
+            </div>
+            <div class = "col-md-4">
+               <h3>Office Hours</h3>
+               <table id ="office" class = "table table-hover table-condensed" style = "margin:15px 0px;">
+                  <tbody>                    
+                    Wenwen Zhang @ Architecture Annex, Room 215<br>
+                    By Appointment  <br>
+                  </tbody>
+               </table>
+            </div>
+
+         </div>
+         <hr id="objective">
+         <div class= "row" style = "padding-top: 20px;">
+            <div class = "col-md-12">
+               <h3 >Class Objective</h3>
+               The objective of this course is to familiarize students with modern unstructured data acquisition, processing and machine learning techniques. The course also demonstrates how these tools can be applied in real-world context. The course is practice oriented, i.e., concepts and models are motivated and illustrated by application to urban problems and datasets. By the end of the semester, the students will be able to:
+
+               <ol>
+                  <li>Learn basics of Python 2.7</li>
+                  <li>Download Data using API</li>
+                  <li>Scrape Data Online</li>
+                  <li>Cleaning messy data </li>
+                  <li>Perform basic data analysis using machine learning algorithms</li>
+                  <li>Natural language processing: text mining</li>
+                  <li>Evaluate model outputs</li>
+                  <li>Visualize model outputs</li>
+               </ol> 
+            </div>
+         </div>
+         <hr id="Procedure"> 
+          <div class= "row">
+            <div class = "col-md-12">
+               <h3 >Course Procedure and Organization</h3>
+                <div class="alert alert-info">In the course, students will work on a <span class="label label-danger">REAL-WORLD PROJECT</span>: Evaluating the social and economic imapcts of Arlington Restaurant Initiative (ARI). Studnets are expected to get familiar with the project and develope social and economic evaluation framework based on the literature review for the first 2-3 weeks in the class.</div> 
+
+               The course is organized in a series of lectures, hands-on exercises, and readings. The lectures and readings are designed to allow students to have basic knowledge of unstructure urban data, statistics analysis, machine learning, and implementations. The exercise session will provide students with hands-on experience adjusting Python Scripts for data acquisition, processing, model development, and model results analysis. During the implementation process, students will learn the skills to downloand data via APIs, scrape webiste, conduct data query, basic joining, perform statistics tests, as well as model development and evaluation in Python. Students will use <span class="label label-warning">Google Classroom</span> to submit assignments and discuss questions on class materials and homework. The class materials and schedules are published on the Google Classroom website.<br> 
+               <br>
+               The challenge in learning planning analytics lies in absorbing a conceptual understanding of different data acquisition and processing techniques with Python training in implementation. Therefore, every attempt has been made wherever possible, to provide a “hands-on” exercise application of the concepts demonstrated in the previous lecture sessions. Additionally, case-studies (i.e., ARI project for this semester) in homework assignment will provide examples of the data and models learned in class may be applied in real-world practices, in data preparation, and in problem-solving, to bridge the gap between academics and technicalities. 
+
+
+            </div>
+         </div>
+         <hr id = "book">
+         <div class = "row"style = "padding-top: 20px;">
+            <div class = "col-md-12">
+               <h3>Readings and Materials</h3>
+               Weekly reading materials will be added to course folder<br>
+               <!-- <ul>
+                  <li><a href = "http://shop.oreilly.com/product/0636920028918.do">Data Science for Business</a> by Foster Provost and Tom Fawcett </li>
+                  <li><a href = "https://web.stanford.edu/~hastie/Papers/ESLII.pdf">The Elements of Statistical Learning: Data Mining, Inference, and Prediction </a>by Trevor Hastie, Robert Tibshirani, and Jerome Friedman</li>
+               </ul>
+               Visualization <br>
+               <ul>
+                  <li><a href = "https://www.amazon.com/Information-Dashboard-Design-At-Glance/dp/1938377001"> Information Dashboard Design: Displaying Data for At-a-Glance Monitoring </a> by Stephen Few</li>
+                  <li><a href = "https://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281">The Wall Street Journal Guide to Information Graphics: The Dos and Don'ts of Presenting Data, Facts, and Figures</a> by Dona Wong </li>
+                  <li><a href = "https://www.amazon.com/Show-Me-Numbers-Designing-Enlighten/dp/0970601972">Show Me the Numbers: Designing Tables and Graphs to Enlighten</a> by Stephen Few </li>
+               </ul>
+               Readings will be posted to Google Classroom. Students are expected to finish readings before coming to classes. -->
+            </div>
+         </div>
+         <hr id="schedule">
+         <div  class = "row" style = "padding-top: 20px;">           
+            <div class = "col-md-12">
+               <h3 >Class Schedule (Tentative)</h3>
+               <table class = "table table-hover table-condensed" rules = "cols" style = " border-collapse:collapse; box-sizing: border-box">
+                  <thead>
+                     <tr style = "font-weight:bold; border: 3px solid #D3D3D3" >
+                        <td colspan = "2" style = "text-align:center;"><b>Date</b></td>
+                        <td><b>Topic</b></td>
+<!--                         <td><b>Mon</b></td> -->
+                        <td><b>Reading Materials</b></td>
+                        <td style = "width: 170px;">
+                        Reminders <br>
+                        </td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <!-- week 1-->
+                     <tr>
+                        <td style = "width: 30px;">Aug. </td>
+                        <td style = "width: 80px;">21</td>
+                        <td >
+                           Welcome &  Overview; <br>
+                           Introduction to Shared Mobility and Automated Vehicles Technology<br>
+                        </td>
+                        <td>
+                        </td>
+<!--                    <td>
+                           Course Introduction: Data-Analytics Thinking<br>
+                           Arlington Restaurant Initiative (ARI) Project Background<br>
+                        </td> -->
+                        <td style = "width: 150px;">&nbsp;</td>
+                     </tr>
+                     <!-- week 2 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >28</td>
+                        <td>
+                           Transport - Private Vehicle Ownership<br>
+                        </td>
+                        <td>
+                           
+                        </td>
+<!--                         <td>
+                           Python Basics II <br>
+                           Social Imapact Analysis Group Presentation <br>
+                        </td> -->
+                        <td style = "width: 150px;">  
+                           <font color = "orange"> HW 1 OUT </font><br>
+                        </td>
+                     </tr>
+                     <!-- week 3 -->
+                     <tr>
+                        <td style = "width: 30px;">Sept.</td>
+                        <td style = "width: 70px;" >4</td>
+                        <td>
+                           Transport - Highway + Parking Infrastructure
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <!-- <td>
+                           Download Data using APIs<br>
+                           Economic Imapct Analysis Group Presentation
+                        </td> -->
+                        <td style = "width: 150px; color: orange;">
+                          
+                        </td>
+                     </tr>
+
+                     <!-- week 4 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >11</td>
+                        <td>
+                           Transport - Bikes + Pedestrians<br>
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <!-- <td>
+                           ownload Data using Webscraping Scripts
+                        </td> -->
+                        <td style = "width: 150px; color: orange; ">
+                            <font color = "orange"> HW 1 DUE FEB 07TH, 11:59 PM</font><br>
+                        </td>
+                     </tr>
+
+                     <!-- week 5 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >18</td>
+                        <td>
+                           Transport - Transit
+                        </td>
+                        <td>
+                           
+                        </td>
+                       <!--  <td>
+                           Data Cleaning + Fusion
+                        </td> -->
+                        <td style = "width: 150px; color: orange">
+                           <font color = "orange">HW 2 OUT</font><br>
+                        </td>
+                     </tr>
+
+
+                     <!-- week 6 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >25</td>
+                        <td>
+                           Land Use - Employment
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <!-- <td>
+                           Introduction to Data Visualization
+                        </td> -->
+                        <td style = "width: 150px;color: orange">
+                        </td>
+                     </tr>
+
+                     <!-- week 7 -->
+                     <tr>
+                        <td style = "width: 30px;">Oct.</td>
+                        <td style = "width: 70px;" >02</td>
+                        <td>
+                        	Land Use - Commercial Land
+                        </td>
+                        <td>
+                                                  
+                        </td>
+                        <!-- <td>
+                           Tableau + GIS: Data Visualization
+                        </td> -->
+                        <td style = "width: 150px;color: orange">
+                        </td>
+                     </tr>
+
+                     <!-- week 8 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >09</td>
+                        <td>
+                           Land Use - Residential Land
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <!-- <td>
+                           <span class="label label-success">No Class</span>
+                        </td> -->
+                        <td style = "width: 150px; color: orange">  
+                        </td>
+                     </tr>
+
+                     <!-- week 9 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >16</td>
+                        <td>
+                           Land Use - Parks and Open Space
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <!-- <td>
+                           Machine Learning vs. Statistics
+                        </td> -->
+                        <td style = "width: 150px; color: orange">
+                              HW 2 DUE MAR 14TH, 11:59 PM
+                        </td>
+                     </tr>
+
+                     <!-- week 10 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >23</td>
+                        <td>
+                           Real Estate - Accessibility and Housing Values
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <!-- <td>
+                           Supervised Machine Learning: Trees and Boosting
+                        
+                        </td> -->
+                        <td style = "width: 150px; color : orange">
+                           HW 3 OUT
+                        </td>
+                     </tr>
+
+                     <!-- week 11 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >30</td>
+                        <td>
+                           Real Estate - Affordable Housing                           
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <!-- <td>
+                           Reinforcement Learning
+                        </td> -->
+                         <td style = "width: 150px; color : orange">
+                        </td>
+                     </tr>
+
+                     <!-- week 12 -->
+                     <tr>
+                        <td style = "width: 30px;">Nov.</td>
+                        <td style = "width: 70px" >06</td>
+                        <td>
+                           Urban Design - Street Design
+                        </td>
+                        <td>
+                           
+                           
+                        </td>
+                       <!--  <td>
+                           Texting Mining Model Developments
+                           
+                        </td> -->
+                        <td style = "width: 150px; color: orange">
+                        </td>
+                     </tr>
+                     <!-- week 13 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >13</td>
+                        <td>
+                           Urban Design- Metropolitan Footprinting
+                        </td>
+                        <td>
+                           
+                        </td>
+                       <!--  <td>
+                          How to Avoid Over Fitting?
+                        </td> -->
+                        <td style = "width: 150px; color:orange">
+                        </td>
+                     </tr>
+
+                     <!-- week 14 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >20</td>
+                        <td>
+                           <span class="label label-success">No Class, Happy Thanksgiving</span>
+                        </td>
+                        <td>
+                           
+                        </td>
+                      <!--   <td>
+                           HW 3 Group Presentation
+                        </td> -->
+                        <td style = "width: 150px; color: orange">
+                           HW 3 DUE APR 18TH, 11:59 PM
+                        </td>
+                     </tr>
+
+                     <!-- week 15 -->
+                     <tr>
+                        <td style = "width: 30px;"></td>
+                        <td style = "width: 70px;" >27</td>
+                        <td>
+                           Urban Design - Densification
+                        </td>
+                        <td>
+                          
+                        </td>
+                       <!--  <td>
+                           Mock Final Presentation
+                        </td> -->
+                        <td style = "width: 150px;">
+                        </td>
+                     </tr>
+
+                     <!-- week 16 -->
+                     <tr>
+                        <td style = "width: 30px;">Dec.</td>
+                        <td style = "width: 70px;" >04</td>
+                        <td>
+                           Mid-term Report Finalizing
+                        </td>
+                        <td>
+                           
+                        </td>
+                       <!--  <td>
+                           Final Presentation
+                        </td> -->
+                        <td style = "width: 150px;"></td>
+                     </tr>
+
+
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <hr id="grading">
+         <div class = "row" style = "padding-top: 20px;">
+            <div class = "col-md-12">
+               <h3 >Course Requirements and Grading</h3>
+               <div class= "col-md-7">
+                  <h4>Homework Assignments [60%]</h4>
+                  <div class="alert alert-info">
+                     <span class="label label-danger">The BEST way</span> to get help with homework assignments is to post your questions to Piazza. (Please kindly review the posted questions for potential answers) If you prefer that keep your questions to only the TA and the instructor, you may use the <em>private post</em> feature (i.e., check the "Individual Students(s) / Instructors(s)" radio box).
+                  </div>
+                  <div class="alert alert-info">
+                     <span class="label label-danger">Teams of 3-4</span> should be formed at the beginning of the semester. Most assignments are team projects. VT students <span class="label label-danger">MUST</span> observe the <a href="https://graduateschool.vt.edu/academics/expectations/graduate-honor-system.html">Graduate honor code manual</a>.
+                  </div>
+
+                  We plan to have three assignments (Check Schedule for Due time):<br>
+                  <ul>
+                     <li>HW1 [25%]: Social and Economical Impact Analysis Framework Development * Team Work</li>
+                     <li>HW2 [25%]: Data Collection and Control Group Selection [Logistic Regression] * Team Work</li>
+                     <li>HW3 [10%]: Real-time twitter data scraping and Tableau * Individual Work</li>
+                  </ul>
+
+                  The detailed grading criteria will be provided in assignment descriptions. Students will have approxiatmely 1.5 - 2 weeks to finish the assignment. The in-class exercise sessions will demonstrate how to use/adjust Python Scripts to finish the assignment!
+               </div>
+               
+               <div class= "col-md-5">
+                  <h4>Class Project [30%]</h4>
+                  The objective of the final project is to develope a data dashboard for the Arlington County Police Department (ACPD) to check the long-term economcial and social impact of the Arlington Restaurant Initiative (ARI). The final project is an extensition of the HW 1 AND 2. The teams are expected to use the second half of the semester to improve and extend the impact evaluation framework and data from HW 1 and 2 and develop a comprehensive and professional data dashboard to be presented to ACPD. 
+               </div>
+
+               <div class= "col-md-5">
+                  <h4>Participation [10%]</h4>
+                   <div class="alert alert-info">
+                     <span class="label label-danger">Hint</span> Piazza does track students' contributions
+                  </div>
+                  Attendance, participation in class discussions, and out of class discussions (on Piazza), and motivation may affect your grade and could potentially influence any borderline grade. Roll will be called in class. 
+               </div>
+
+               <div class = "col-md-12">
+                  <h4>Final Evaluation</h4>
+                  The breakdown of final grades: <br>
+                  <div class = "col-md-3">
+                     <ul>
+                        <li> <span class="label label-default">A  </span> : [94,100]
+                        <li> <span class="label label-default">A- </span> : [90, 94)
+                     </ul>
+                  </div>
+                  <div class = "col-md-3">
+                     <ul>
+                        <li> <span class="label label-default">B+ </span> : [87, 90)
+                        <li> <span class="label label-default">B  </span> : [83, 87)
+                        <li> <span class="label label-default">B- </span> : [80, 83)
+                     </ul>
+                  </div>
+                  <div class = "col-md-3">
+                     <ul>
+                        <li> <span class="label label-default">C+ </span> : [77, 80)
+                        <li> <span class="label label-default">C  </span> : [73, 77)
+                        <li> <span class="label label-default">C- </span> : [70, 73)
+                     </ul>
+                  </div>
+                  <div class = "col-md-3">
+                     <ul>
+                        <li> <span class="label label-default">D  </span> : [60, 70)
+                        <li> <span class="label label-default">F  </span> : [0 , 60)
+
+                     </ul>
+                  </div>
+               </div>
+               
+            </div>
+
+           
+         </div>
+         <hr>
+         <div class="well">
+  
+            <h3>Late Submissions Policy</h3>
+            <ul>
+            <!-- <li>Strictly enforced.</li> -->
+            <li><strong>Homework</strong>: each team has <em>5 slip days</em> total. No questions asked.</li>
+            <li><strong>Each slip day equals 24 hours</strong>. E.g., 2 slips days will be used if you submit your assignment 40 hours after the deadline</li>
+            <li>After all slip days are used up, <strong>10% deduction for every 24 hours of delay</strong>. (e.g., 10 points for a 100-point homework)</li>
+            <li>To use slip days, <strong>identify the number of days you have used by the end of the homework assignment</strong></li>
+            <li><strong>Project</strong>: Slip days cannot be used for final projects. 5% reduction for every 24 hours of delay. <strong>NO</strong> project will be graded if submitted 3 days after the deadline</li>
+            <br>
+            <li>We <strong>will not consider late submission of any missing parts</strong> of an homework assignment or project deliverable. To make sure you have submitted everything, download your submitted files to double check.
+            </li>
+            <br>
+            <li>No penalties for medical reasons or emergencies. You <strong>must</strong> submit a doctor's note or an official letter explaining the emergency.</li>
+            </ul>
+
+         </div>
+
+         <div class = "well">
+            <h3>Class Accessibility</h3>
+            Any student with a disability requiring accommodations in this course is encouraged to contact me after class or during office hours. In addition, students should contact the <a href = "https://www.ssd.vt.edu/">Services for Students with Disabilities</a> for Academic Success. 
+         </div>
+
+
+         <div class = "row">
+            <div class = "col-md-12">
+               <h3 id="housekeeping">Finally, a couple of house keeping things</h3>
+               <ol>
+                  <li>Check the class website frequently to see any changes, updates, tips, and announcements. </li>
+                  <!-- <li>When you submit your final work, please include all your works into one PDF file, following file naming convention like this: ‘ch1_Lastname.pdf’, ‘major1_Lastname.pdf”, ‘Exam_Lastname.pdf’. Word and Excel NOT allowed for submission</li> -->
+                  <li>When you have questions, please e-mail me with a heading of “[UAP5114]” in the subject. </li>
+               </ol>
+            </div>
+         </div>
+         <hr>
+         <h2>Welcome to the Shared Mobility and Automated Vehicles Planning Studio and good luck!</h2>
+         <br>
+         <br>
+       </div>
+
+      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
+      
+   </body>
+</html>
